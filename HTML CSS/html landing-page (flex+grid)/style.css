@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.header_logo {
+  width: 150px;
+  height: auto;
+}
+
+.header_logo_img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.header_logo_img:hover {
+  cursor: pointer;
+}
+.sticky_settings {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #6168ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 2px;
+  top: 200px;
+  color: white;
+  z-index: 2;
+}
+
+.sticky_settings:hover {
+  cursor: pointer;
+}
+
+.sticky_settings i {
+  animation: rotation 2s infinite linear;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.list_item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.2s ease-in, border 0.2s ease-in;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+.list_item a:hover {
+  color: #6168ff;
+  border-color: #6168ff;
+}
+
+.banner_section {
+  background-image: url(./img/2023-01-26_03-46-42.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  row-gap: 50px;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.banner_section p {
+  color: white;
+}
+
+.banner_small_text {
+  word-spacing: 2px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.banner_large_text {
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.banner_btn {
+  color: white;
+  background-color: #6168ff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s linear;
+}
+
+.banner_btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.features {
+  display: grid;
+  padding: 100px 250px;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 100px;
+}
+
+.features_boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.features_boxes_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.features_boxes_box i {
+  font-size: 48px;
+  color: #6168ff;
+}
+
+.box_title_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.box_desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.img_video {
+  width: 600px;
+  height: 400px;
+  background-image: url(./img/features_img.jpg);
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px;
+  margin-bottom: 40px;
+}
+
+.destinations {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  padding: 0px 250px 100px 250px;
+  justify-items: center;
+}
+
+.destination_title {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dest_small_title {
+  font-size: 15px;
+  color: #6168ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.dest_large_title {
+  font-size: 27px;
+  color: #333;
+}
+
+.destinations_card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid gray;
+  transition: all 0.4s;
+}
+
+.destinations_card:hover .change {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+}
+
+.destinations_card:hover .change:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.dest_card_img {
+  width: 410px;
+  height: 350px;
+}
+
+.dest_card_img img {
+  max-width: 100%;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.card_info {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.card_place_name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_place_cost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.change {
+  font-size: 14px;
+  opacity: 0;
+}
+
+.place_name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.place_trip_time,
+.place_cost_span,
+.change {
+  color: #727272;
+}
+
+.fixed_title {
+  position: absolute;
+  font-size: 73px;
+  color: #efefef;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  z-index: -1;
+  top: 20px;
+}
+
+.services {
+  position: relative;
+  display: grid;
+  padding: 0px 250px 100px 250px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.5fr;
+  justify-items: center;
+  gap: 30px;
+}
+
+.services_fixed_title {
+  position: absolute;
+  font-size: 73px;
+  color: #efefef;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  z-index: -1;
+  top: 10px;
+}
+
+.services_title {
+  grid-column: 1/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serv_small_title {
+  font-size: 15px;
+  color: #6168ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.serv_large_title {
+  font-size: 27px;
+  color: #333;
+}
+
+.services_card {
+  background-color: #f4f9ff;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 35px;
+  transition: all 0.4s;
+}
+
+.services_card:hover,
+.destinations_card:hover {
+  transform: scale(1.1);
+}
+
+.services_card i {
+  font-size: 40px;
+  color: #6168ff;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card_desc_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+}
+
+.card_desc_info {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+.serv_card_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

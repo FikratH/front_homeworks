@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(./img/nitin-karolla-o78ytg6LbJc-unsplash.jpg);
+  background-size: cover;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 100px;
+}
+
+.logo_span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_name {
+  color: #ffffff;
+  font-size: 36px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.item_link {
+  color: #ece9e3;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 880px;
+  gap: 50px;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: white;
+}
+
+.small_text {
+  font-size: 48px;
+  font-style: italic;
+  text-align: center;
+}
+
+.large_text {
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background-color: #0487ed;
+  font-size: 16px;
+  color: #fff;
+  padding: 23px 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: transparent;
+  transition: box-shadow 0.4s ease-out, background-color 0.4s linear;
+}
+
+.btn:hover {
+  box-shadow: rgba(13, 13, 13, 0.2) 0px 2px 35px 14px;
+  background-color: #fc3f4b;
+  cursor: pointer;
+}

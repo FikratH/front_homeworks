@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+header,
+.team_header {
+  align-self: flex-start;
+  border-bottom: 1px solid #3db04b;
+}
+
+main {
+  padding-top: 30px;
+}
+
+.services_boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.box {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.icon_header {
+  color: #3db04b;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.icon_header i {
+  font-size: 36px;
+}
+
+.box_text {
+  color: #888888;
+  line-height: 28px;
+}
+
+.team_box_image {
+  width: 360px;
+  height: 360px;
+}
+
+.team_box_image_img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.our_team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.team_boxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team_box_desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name_profession {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: #3db04b;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.team_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.profession {
+  color: #888888;
+  font-style: italic;
+}
+
+.contact_button {
+  border-radius: 50%;
+  background-color: #3db04b;
+  max-width: 40px;
+  max-height: 40px;
+  padding: 0px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: -35px;
+}
+
+.contact_button:hover {
+  cursor: pointer;
+}
+
+.find_me {
+  color: #888888;
+}
+
+.find_me_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cccccc;
+}
+
+.find_me_icons i:hover {
+  color: #3db04b;
+  cursor: pointer;
+}
+
+.contact_button i:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+}

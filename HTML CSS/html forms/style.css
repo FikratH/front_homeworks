@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(https://colorlib.com/etc/cf/ContactFrom_v11/images/bg-01.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 80px;
+}
+
+.span {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.form_div {
+  background: #fff;
+  border-radius: 20px;
+  padding: 66px 115px 59px;
+  position: relative;
+}
+
+.form_wrapper {
+  width: 730px;
+  height: 628px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_header {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.name_email_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.input {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  padding: 0px 90px 0 28px;
+  height: 62px;
+  transition: background-color 0.4s ease-out;
+}
+
+input::placeholder {
+  color: #a8a8a8;
+  line-height: 1.2;
+}
+
+.input:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.form_message_input {
+  height: 130px;
+}
+
+.form_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 62px;
+  font-family: "Raleway";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  outline: none !important;
+  border: none;
+  background: 0 0;
+  background-image: linear-gradient(to right, #449afb, #05c52b);
+  max-width: 62px;
+  align-self: center;
+}
+
+.form_btn:hover {
+  background-image: linear-gradient(to right, #05c52b, #449afb);
+}
+
+/*  */
