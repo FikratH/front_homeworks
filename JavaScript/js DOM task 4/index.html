@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="body_container">
+      <form action="" onsubmit="return false" class="form">
+        <div class="inputs">
+          <div class="brand_div">
+            <input
+              type="input"
+              class="brand"
+              placeholder="Brand"
+              id="brand"
+              required
+            />
+            <label for="brand" class="brand_lbl">Brand</label>
+          </div>
+          <div class="model_div">
+            <input
+              type="input"
+              class="model"
+              placeholder="Model"
+              id="model"
+              required
+            />
+            <label for="model" class="model_lbl">Model</label>
+          </div>
+          <div class="year_div">
+            <input
+              type="number"
+              class="year"
+              placeholder="Year"
+              id="year"
+              required
+            />
+            <label for="year" class="year_lbl">Year</label>
+          </div>
+          <div class="description_div">
+            <textarea
+              class="desc"
+              name=""
+              id="desc"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+            <label for="desc" class="desc_lbl">Description</label>
+          </div>
+        </div>
+        <div class="box">
+          <label for="one">Brand New?</label>
+          <input
+            id="one"
+            name="box1"
+            type="checkbox"
+            class="is_new"
+            novalidate
+          />
+          <span class="check"></span>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>New?</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Tesla</td>
+            <td>Model 3</td>
+            <td>2023</td>
+            <td>Yes</td>
+            <td>Elon Musk</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

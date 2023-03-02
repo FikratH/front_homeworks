@@ -61,6 +61,16 @@ const persons = [
 // Is there at least one character taller than 200?
 // Is there at least one character that has mass less than 50?
 
+// ***REDUCE***
+
+// 1. Get total mass of all characters
+
+// 2. Get total height of all characters
+
+// 3. Get total number of characters by eye color
+
+// 4. Get total number of characters in all the character names
+
 //#endregion
 
 //#region Using MAP
@@ -81,7 +91,7 @@ console.log(persons.map((obj) => obj.height));
 
 console.log(
   persons.map((obj) => {
-    return obj.name + " " + obj.height;
+    return { name: obj.name, height: obj.height };
   })
 );
 //#endregion
