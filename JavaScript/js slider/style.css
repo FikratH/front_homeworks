@@ -6,7 +6,11 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg.jpeg);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./img/bg.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -83,7 +87,7 @@ body {
   width: 150px;
   height: 100px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
   margin-top: -50px;
@@ -117,4 +121,4 @@ body {
 .container_slider_arrow_left:hover {
   background: #fff;
   color: #f15125;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

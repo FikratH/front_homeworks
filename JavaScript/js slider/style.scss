@@ -7,6 +7,7 @@
 }
 
 body {
+  user-select: none;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./img/bg.jpeg);
   background-size: cover;
