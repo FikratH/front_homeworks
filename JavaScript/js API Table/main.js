@@ -30,7 +30,10 @@ headerItem.forEach((item) => {
       normalFetch();
     } else if (e.target.innerHTML.includes("▼")) {
       e.target.innerHTML = e.target.innerHTML.replace("▼", "▲");
-      if (e.target.innerText.includes("NAME")) {
+      if (
+        e.target.innerText.includes("NAME") &&
+        !e.target.innerHTML.includes("USERNAME")
+      ) {
         descSortByName();
       } else if (e.target.innerText.includes("USERNAME")) {
         descSortByUsername();
@@ -41,7 +44,10 @@ headerItem.forEach((item) => {
       }
     } else {
       e.target.innerText += "▼";
-      if (e.target.innerText.includes("NAME")) {
+      if (
+        e.target.innerText.includes("NAME") &&
+        !e.target.innerHTML.includes("USERNAME")
+      ) {
         sortByName();
       } else if (e.target.innerText.includes("USERNAME")) {
         sortByUsername();
@@ -279,3 +285,43 @@ function descSortByAddress() {
       });
     });
 }
+
+//express a number a sum of four squares
+
+// function sumOfFourSquares(n) {
+//   let arr = [];
+//   for (let i = 0; i * i <= n; i++) {
+//     for (let j = 0; j * j <= n; j++) {
+//       for (let k = 0; k * k <= n; k++) {
+//         for (let l = 0; l * l <= n; l++) {
+//           if (i * i + j * j + k * k + l * l == n) {
+//             arr.push([i, j, k, l]);
+//           }
+//         }
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(sumOfFourSquares(10140));
+
+// const customConvertMilliSecondsToDate = (milliseconds) => {
+//   const seconds = Math.floor(milliseconds / 1000);
+//   const minutes = Math.floor(seconds / 60);
+//   const hours = Math.floor(minutes / 60);
+//   const days = Math.floor(hours / 24);
+//   const months = Math.floor(days / 30);
+//   const years = Math.floor(months / 12);
+
+//   console.log(
+//     `years: ${years}, months: ${months % 12}, days: ${days % 30}, hours: ${
+//       hours % 24
+//     }, minutes: ${minutes % 60}, seconds: ${seconds % 60}`
+//   );
+//   // setInterval(() => {
+//   //   customConvertMilliSecondsToDate(milliseconds - 1000);
+//   // }, 1000);
+// };
+
+// customConvertMilliSecondsToDate(123456787654321);

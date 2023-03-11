@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --clr-primary: hsl(237, 12%, 33%);
+  --clr-secondary: hsl(240, 6%, 50%);
+  --clr-dividers: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(35deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 700px;
+  max-width: 1000px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.wrapper_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left_image {
+  width: 100%;
+  height: auto;
+  margin-left: -100px;
+}
+
+.left_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin-left: -50px;
+}
+
+.right_title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--clr-primary);
+  margin-bottom: 20px;
+}
+
+.accordion_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--clr-dividers);
+  padding: 25px 0;
+}
+
+.accordion_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.item_title {
+  font-size: 1.1rem;
+  color: var(--clr-secondary);
+}
+
+.accordion_desc {
+  font-size: 0.95rem;
+  color: var(--clr-secondary);
+  line-height: 1.7;
+  padding-left: 5px;
+  margin-top: 15px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.accordion_desc_active {
+  height: 50px;
+}
+
+.accordion_arrow_active {
+  transform: rotate(180deg);
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1% 99%;
+    row-gap: 30px;
+  }
+
+  .accordion_item {
+    padding: 15px 0;
+  }
+
+  .wrapper_left {
+    justify-content: flex-end;
+  }
+
+  .wrapper_right {
+    margin-top: 70px;
+  }
+
+  .right_accordion {
+    max-width: 300px;
+    align-items: center;
+  }
+  .accordion_desc {
+    overflow: scroll;
+  }
+}
