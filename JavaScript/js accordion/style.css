@@ -122,7 +122,7 @@ body {
   font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1% 99%;
