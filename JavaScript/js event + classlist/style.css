@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.upheader {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #06001d;
+  padding: 10px 85px;
+  color: #556bb3;
+}
+.upheader_angle_down {
+  display: none;
+}
+.upheader span {
+  color: #76708a;
+  font-size: 13px;
+}
+.upheader i {
+  font-size: 13px;
+}
+.upheader_info {
+  display: flex;
+  gap: 20px;
+}
+.upheader_info_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.4s ease-out;
+}
+.upheader_contacts {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.upheader_contacts i:hover {
+  color: #3d4a85;
+  cursor: pointer;
+}
+
+.header {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  padding: 20px 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 2;
+}
+.header_navbar_items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.header_navbar_items_item_link {
+  color: #565656;
+  text-decoration: none;
+}
+.header_navbar_items_item_link:hover {
+  color: black;
+}
+.header_navbar_items_search:hover {
+  cursor: pointer;
+}
+.header_navbar_items_burger {
+  border: 2px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+.header_navbar_items_burger:hover {
+  cursor: pointer;
+}
+
+.active {
+  display: block !important;
+  transition: display 0.4s ease-out;
+}
+
+@media screen and (max-width: 992px) {
+  .upheader_info,
+  .upheader_contacts {
+    display: none;
+  }
+  .upheader_angle_down {
+    display: inline;
+    color: #556bb3;
+  }
+  .upheader {
+    justify-content: center;
+  }
+  .header_navbar_items_burger {
+    display: inline;
+  }
+  .header_navbar_items_item {
+    display: none;
+  }
+  .search {
+    display: inline;
+  }
+}/*# sourceMappingURL=style.css.map */
